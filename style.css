@@ -1,0 +1,665 @@
+/*
+MINDEN OLDALRA VONATKOZO FORMAZASOK********************************
+*/
+@media print {
+    p {font-size: 12pt; }
+    video, audio, img, #bejelentkezes, nav, iframe, pre, aside, figure {display: none; }
+
+    #fooldaldiv {
+        width: 100%;
+    }
+    #promisedneverlanddiv{
+        width: 100%;
+    }
+    #konosubadiv{
+        width: 100%;
+    }
+    .deathparadediv{
+        width: 100%;
+    }
+    #narutodiv{
+        width: 100%;
+    }
+    h1, h2, h3, h4  {page-break-after: avoid;}
+
+}
+
+@page {margin: 0.5cm;}
+
+body{
+
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    margin-top: 25px;
+    z-index: 100;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 70%;
+}
+
+nav li{
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+
+}
+nav a{
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    transition: font-size 0.5s;
+    letter-spacing: 3px;
+}
+
+nav a:hover{
+    font-size: 24px;
+}
+nav ul li:first-child a{
+    border-radius: 15px 0 0 15px;
+}
+nav ul li:last-child a{
+    border-radius: 0 15px 15px 0;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.szoveg{
+    text-align: justify;
+    white-space: normal;
+    font-size: unset;
+}
+#karakterek{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    bottom: 0;
+    height: 0;
+}
+
+.bevezeto{
+    line-height: 1.6;
+}
+
+/*
+FOOLDAL FORMAZASOK***************************************
+*/
+#profilePicture{
+    width: 80px;
+    border: 2px solid black;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+}
+#bejelentkezes{
+    /*border: 3px dashed red;*/
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    /*background-color: #fccdc1d8;*/
+    right: 0;
+    top: 20%;
+    overflow:auto;
+    z-index: 100;
+
+}
+
+#regisztracio{
+    text-decoration: none;
+    color: black;
+}
+
+#bejelentkezes input[type="submit"]{
+    border: 2px solid black;
+    width: 70px;
+    padding-right: 0;
+    float: right;
+}
+
+
+#fooldalbody{
+    background-image: url("img/fooldal/fooldalhatter.jpg");
+
+}
+#fooldalfejlec a{
+    background-color: crimson;
+    color: black;
+    
+}
+#fooldalfejlec a:hover{
+    background-color: rgb(196, 20, 55);
+}
+
+#fooldalfejlec a:active{
+    color: black;
+}
+
+#fooldalfejlec li:nth-child(1) a{
+    background-color: rgb(199, 23, 59);
+}
+
+#fooldallablec{
+    background-color: #fccdc1d8;
+}
+#fooldalcim{
+    background-color: red;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+#fooldaldiv{
+    border: 5px dashed red;
+    background-color: #ffe2db;
+    border-radius: 10px;
+    width: 57%;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+#fooldalbalkarakter{
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+#fooldaljobbkarakter{
+    width: 20%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.fooldalkepek{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+#valaszto{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#momotaro {
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+}
+
+#erzesek {
+    float: left;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#cutie{
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+}
+/*
+kONOSUBA FORMAZASOK*******************************
+*/
+#konosubabody{
+    background-image: url("img/konosuba/konosubahatter.png") ;
+}
+
+#konosubafejlec a{
+    background-color: #750086;
+    color: white;
+}
+
+#konosubafejlec a:hover{
+    background-color: #680777;
+}
+#konosubafejlec a:active{
+    color: white;
+ }
+
+#konosubafejlec li:nth-child(2) a{
+    background-color: #560463;
+}
+#konosubalablec{
+    background-color: #eee1ffd8;
+}
+#konosubacim{
+    background-color: #9800ac;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+#konosubadiv{
+    background-color: #eee1ff;
+    border: 5px dashed #9800ac;
+    border-radius: 10px;
+    width: 57%;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+#konosubabalkarakter{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 20%;
+}
+
+#konosubajobbgif{
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    animation-name: konosubadancejobb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#konosubabalgif{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    height: 225px;
+    animation-name: konosubadancebal;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes konosubadancebal{
+    50% {transform: translateX(80%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes konosubadancejobb{
+    50% {transform: translateX(-80%);}
+    100% {transform: translateX(0%);}
+}
+.konosubakepek{
+    float: right;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 20%;
+    border: 3px solid #9800ac;
+}
+/*
+PROMISED NEVERLAND FORMAZASOK*********************
+*/
+
+#promisedneverlandbody{
+    background-image: url("img/promisedneverland/promisedneverlandhatter.jpg");
+}
+
+#promisedneverlandfejlec a{
+    background-color: #00d4db;
+    color: black;
+}
+#promisedneverlandfejlec a:hover{
+    background-color: #0cb2b8;
+}
+
+#promisedneverlandfejlec a:active{
+    color: black;
+}
+
+#promisedneverlandfejlec li:nth-child(3) a{
+    background-color: #08b3b9;
+}
+#promisedneverlandlablec{
+    background-color: #e3fcffd8;
+}
+#promisedneverlandcim {
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+#promisedneverlanddiv{
+    border: 5px dashed aqua;
+    background-color: #e3fcff;
+    border-radius: 10px;
+    width: 57%;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+
+.promisedneverlandkepek{
+    border-radius: 10px;
+    border:3px solid aqua;
+}
+
+.promisedneverlandkozep{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+}
+
+#la{
+    width: 30%; 
+    float: right; 
+    margin-left: 10px;
+}
+
+#conny{
+    width: 100%; 
+}
+#kaja{
+    width: 30%; 
+    float: right; 
+    margin-left: 10px;
+}
+
+#connyfigure{
+    width: 30%; 
+    float: right; 
+    margin-left: 10px; 
+    margin-right: 0; 
+    margin-top: 0;
+    border-radius: 10px
+}
+
+#promisedbalkarakter{
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+#promisedjobbkarakter{
+    width: 20%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+/*
+NARUTO FORMAZASOK************************************
+*/
+#narutobody{
+    background-image: url("img/naruto/narutohatter.jpg")
+}
+
+#narutofejlec a{
+    background-color: #e23304;
+    color: black;
+}
+
+#narutofejlec a:hover{
+    background-color: #c7350d;
+}
+#narutofejlec a:active{
+    color: black;
+}
+
+#narutofejlec li:nth-child(4) a{
+    background-color: #a52f0e;
+}
+#narutolablec{
+    background-color: #ffaf53d8;
+}
+
+#narutocim {
+    background-color: orangered;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#narutodiv{
+    border: 5px dashed orangered;
+    background-color: #ffaf53;
+    border-radius: 10px;
+    width: 57%;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+
+#narutobalkarakter{
+    position: fixed;
+    left: 0;
+    bottom: 125px;
+    height: 60%;
+    margin-left: 50px;
+    
+
+}
+
+#narutojobbkarakter{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    height: 60%;
+}
+
+.narutokepek{
+    float: right;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 20%
+}
+
+.narutovideo{
+    border: 3px solid orangered;
+    border-radius: 10px;
+    width:100%;
+}
+
+/*
+DEATH PARRADE FORMAZASOK
+*/
+#deathparadebody{
+    background-image: url("img/deathparade/deathparadehatter.jpg");
+}
+#deathparadefejlec a{
+    background-color: #440274;
+    color: white;
+}
+
+#deathparadefejlec a:hover{
+    background-color:#3b0264;
+}
+#deathparadefejlec a:active{
+    color: white;
+}
+
+#deathparadefejlec li:nth-child(5) a{
+    background-color: #2b0a42;
+}
+#deathparadelablec{
+    background-color: #c4adffd8;
+}
+#deathparadecim{
+    background-color: indigo;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.deathparadediv{
+    background-color: #c4adff;
+    border: 5px dashed indigo;
+    border-radius: 10px;
+    width: 57%;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+
+#deathparadevideo{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid indigo;
+}
+#deathparadetablazat{
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 90%;
+}
+#deathparadetablazat th, #deathparadetablazat td{
+    border: 3px solid indigo;
+    vertical-align: middle;
+    text-align: center;
+}
+#deathparadetablazat th{
+    background-color: indigo;
+    color: white;
+    font-size: 22px;
+}
+#deathparadetablazat td{
+    font-size: 20px;
+    font-weight: bold;
+}
+#deathparadetablazat tr:nth-child(even) {
+    background-color: #ba9fff;
+}
+#deathparadetablazat img{
+    height: 75px;
+    
+}
+#deathparadetablazat img:hover{
+    animation-name: nagyit;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nagyit{
+    0% {transform: scale(1,1);}
+    50% {transform: scale(3,3) skew(-15deg,0deg);}
+    100% { transform: scale(1,1);}
+}
+
+#skull{
+    position: fixed;
+    width: 5%;
+    animation-duration: 10s;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+@keyframes anim{
+    0%   {left: 0; bottom: 0;}
+    25% {left: 94%; bottom:0; transform: rotate(-90deg);}
+    50% {left: 94%; bottom: 90%; transform: rotate(-180deg);}
+    75% {left: 0; bottom: 90%; transform: rotate(-270deg);}
+    100% {left: 0; bottom: 0; transform: rotate(-360deg); }
+}
+
+/*
+REGISZTRACIOS OLDAL FORMAZASOK********************
+*/
+#reg{
+    width: 550px;
+    margin: 50px auto;
+    height: 800px;
+    background-color:#fccdc1 ;
+    border:5px dashed red;
+
+}
+#reg fieldset{
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+#reg input[type="submit"], input[type="reset"]{
+    margin: 15px 25px;
+
+}
+.radiogomb{
+    position: static;
+}
+.inputmezo{
+    margin-right: 50px;
+    position: relative;
+    right: 0;
+    float: right;
+}
+
+#regisztraciofejlec a{
+    border-radius: 10px;
+    background-color: crimson;
+    width: 20%;
+}
+
+#regisztraciofejlec a:hover{
+    background-color: rgb(196, 20, 55);
+}
+#regisztraciofejlec a:active{
+    color: black;
+}
+/*KOMMENT.php*/
+
+ 
+#kommentek{
+    background-color: #fccdc1;
+    border: 5px dashed red;
+    width: 55%;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 5px 15px;
+}
+#kommentek form{
+    margin-bottom: 20px;
+}
+#kommentek > div{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+#kommentek > div div{
+    display: block;
+    width: auto;
+}
+#kommentek input[type="text"]{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#kommentek img{
+    float: left;
+    width: 50px;
+    margin: 0 auto;
+}
